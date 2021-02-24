@@ -2,11 +2,11 @@ pipeline {
     agent any
     
     stages {
-        stage('deploy') {
+        stage('build') {
             steps {
             	sh 'pwd'
             	sh 'chmod +x gradlew'
-	sh './gradlew bootRun'
+	sh './gradlew bootJar'
             }
         }
     }
