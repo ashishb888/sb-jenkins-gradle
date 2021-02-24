@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: sb-jenkins-gradle
+
+server:  port: 8090
