@@ -5,7 +5,8 @@ pipeline {
         stage('deploy') {
             steps {
             	sh 'pwd'
-				sh './gradlew bootRun'
+            	sh 'chmod +x gradlew'
+	sh './gradlew bootRun'
             }
         }
     }
